@@ -37,16 +37,16 @@ public class trEstadoCivilDAO extends trSQLiteDataHelper implements trIDAO<trEst
     public List<trEstadoCivilDTO> readAll() throws Exception {
 
         List <trEstadoCivilDTO> listaEstadoCivil = new ArrayList<>();
-        String query = "SELECT trIdCatalogo"
-                    + ", trIdCatalogoTipo"
-                    + ", trNombre"
-                    + ", trDescripcion"
-                    + ", trEstado"
-                    + ", trFechaCreacion"
-                    + ", trFechaModifica"
-                    + " FROM trCatalogo"
-                    + " WHERE trEstado = 'A'"
-                    + " AND trIdCatalogoTipo = 3"; // Tipo 3 para Estado Civil
+        String query = "SELECT trIdCatalogo         "
+                    + ", trIdCatalogoTipo           "
+                    + ", trNombre                   "
+                    + ", trDescripcion              "
+                    + ", trEstado                   "
+                    + ", trFechaCreacion            "
+                    + ", trFechaModifica            "
+                    + " FROM trCatalogo             "
+                    + " WHERE trEstado = 'A'        "
+                    + " AND trIdCatalogoTipo = 3    "; // Tipo 3 para Estado Civil
   
         try {
             Connection conn = trOpenConnection();

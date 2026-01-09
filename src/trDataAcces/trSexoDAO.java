@@ -116,16 +116,16 @@ public class trSexoDAO extends trSQLiteDataHelper implements trIDAO<trSexoDTO> {
     public trSexoDTO readBy(Integer id) throws Exception {
 
         trSexoDTO s = new trSexoDTO();
-        String query = "SELECT trIdCatalogo"
-                    + ", trIdCatalogoTipo"
-                    + ", trNombre"
-                    + ", trDescripcion"
-                    + ", trEstado"
-                    + ", trFechaCreacion"
-                    + ", trFechaModifica"
-                    + " FROM trCatalogo"
-                    + " WHERE trEstado = 'A'"
-                    + " AND trIdCatalogoTipo = 2" // Tipo 2 para Sexo Masculino
+        String query = "SELECT trIdCatalogo         "
+                    + ", trIdCatalogoTipo           "
+                    + ", trNombre                   "
+                    + ", trDescripcion              "
+                    + ", trEstado                   "
+                    + ", trFechaCreacion            "
+                    + ", trFechaModifica            "
+                    + " FROM trCatalogo             "
+                    + " WHERE trEstado = 'A'        "
+                    + " AND trIdCatalogoTipo = 2    " // Tipo 2 para Sexo Masculino
                     + " AND trIdCatalogo = " + id.toString();
   
         try {
