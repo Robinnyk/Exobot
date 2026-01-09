@@ -1,8 +1,8 @@
 package trDataAcces.trDTO;
 
-public class trSexoDTO {
+public class trEstadoCivilDTO {
 
-    private Integer trIdCatalogo;
+     private Integer trIdCatalogo;
     private Integer trIdCatalogoTipo;
     private String  trNombre;
     private String  trDescripcion;
@@ -10,9 +10,9 @@ public class trSexoDTO {
     private String  trFechaCreacion;
     private String  trFechaModificacion;
 
-    public trSexoDTO() {}
+    public trEstadoCivilDTO() {}
    
-    public trSexoDTO(Integer trIdCatalogo, Integer trIdCatalogoTipo, String trNombre, String trDescripcion,
+    public trEstadoCivilDTO(Integer trIdCatalogo, Integer trIdCatalogoTipo, String trNombre, String trDescripcion,
             String trEstado, String trFechaCreacion, String trFechaModificacion) {
         this.trIdCatalogo = trIdCatalogo;
         this.trIdCatalogoTipo = trIdCatalogoTipo;
@@ -91,5 +91,4 @@ public class trSexoDTO {
                 "\n FechaModificacion:'" + getTrFechaModificacion();
     }
 
-    
 }

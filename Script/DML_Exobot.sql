@@ -45,3 +45,19 @@ INSERT INTO trPersona
 (2,                   6,                    10,                   'Giuliana',  'Torres',   '1654321098'),
 (3,                   6,                    11,                   'Eva', 'Reyes', '1567434455'),
 (4,                   6,                    12,                   'Perla',    'Villa',   '1366778899');
+
+SELECT trIdCatalogo
+, trIdCatalogoTipo
+, trNombre
+, trDescripcion
+, trEstado
+, trFechaCreacion
+, trFechaModifica
+FROM trCatalogo
+WHERE trEstado = 'A'
+AND trIdCatalogoTipo = 2;
+
+SELECT COUNT(*) TotalReg 
+FROM trCatalogo 
+WHERE trIdCatalogoTipo = 2 
+AND trEstado = 'A';

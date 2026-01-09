@@ -10,19 +10,19 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
-import trDataAcces.trDTO.trSexoDTO;
+import trDataAcces.trDTO.trEstadoCivilDTO;
 
-public class trSexoDAO extends trSQLiteDataHelper implements trIDAO<trSexoDTO> {
+public class trEstadoCivilDAO extends trSQLiteDataHelper implements trIDAO<trEstadoCivilDTO> {
 
     @Override
-    public boolean create(trSexoDTO entity) throws Exception {
+    public boolean create(trEstadoCivilDTO entity) throws Exception {
 
         String query = "INSERT INTO trCatalogo (trCatalogoTipo, trNombre, trDescripcion) VALUES (?, ?, ?)";
        
         try {
             Connection conn = trOpenConnection();
             PreparedStatement pstmt = conn.prepareStatement(query);
-            pstmt.setInt(1, 2); // Tipo 2 para Sexo Masculino
+            pstmt.setInt(1, 3); // Tipo 3 para Estado Civil
             pstmt.setString(2, entity.getTrNombre());
             pstmt.setString(3, entity.getTrDescripcion());
             pstmt.executeUpdate();
@@ -34,9 +34,9 @@ public class trSexoDAO extends trSQLiteDataHelper implements trIDAO<trSexoDTO> {
     }
 
     @Override
-    public List<trSexoDTO> readAll() throws Exception {
+    public List<trEstadoCivilDTO> readAll() throws Exception {
 
-        List <trSexoDTO> listaSexos = new ArrayList<>();
+        List <trEstadoCivilDTO> listaEstadoCivil = new ArrayList<>();
         String query = "SELECT trIdCatalogo"
                     + ", trIdCatalogoTipo"
                     + ", trNombre"
@@ -46,7 +46,7 @@ public class trSexoDAO extends trSQLiteDataHelper implements trIDAO<trSexoDTO> {
                     + ", trFechaModifica"
                     + " FROM trCatalogo"
                     + " WHERE trEstado = 'A'"
-                    + " AND trIdCatalogoTipo = 2"; // Tipo 2 para Sexo Masculino
+                    + " AND trIdCatalogoTipo = 3"; // Tipo 3 para Estado Civil
   
         try {
             Connection conn = trOpenConnection();
@@ -54,7 +54,7 @@ public class trSexoDAO extends trSQLiteDataHelper implements trIDAO<trSexoDTO> {
             ResultSet rs = stmt.executeQuery(query);
 
             while (rs.next()) {
-                trSexoDTO sexo = new trSexoDTO( rs.getInt(1),       // trIdCatalogo
+                trEstadoCivilDTO estadoCivil = new trEstadoCivilDTO( rs.getInt(1),       // trIdCatalogo
                                                 rs.getInt(2),       // trIdCatalogoTipo
                                                 rs.getString(3),    // trNombre
                                                 rs.getString(4),    // trDescripcion
@@ -62,18 +62,18 @@ public class trSexoDAO extends trSQLiteDataHelper implements trIDAO<trSexoDTO> {
                                                 rs.getString(6),    // trFechaCreacion
                                                 rs.getString(7));   // trFechaModifica
                 
-                listaSexos.add(sexo);
+                listaEstadoCivil.add(estadoCivil);
             }
 
         } catch (SQLException e) {
             throw e;
         }
 
-        return listaSexos;
+        return listaEstadoCivil;
     }
 
     @Override
-    public boolean update(trSexoDTO entity) throws Exception {
+    public boolean update(trEstadoCivilDTO entity) throws Exception {
 
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
@@ -113,9 +113,9 @@ public class trSexoDAO extends trSQLiteDataHelper implements trIDAO<trSexoDTO> {
     }
 
     @Override
-    public trSexoDTO readBy(Integer id) throws Exception {
+    public trEstadoCivilDTO readBy(Integer id) throws Exception {
 
-        trSexoDTO s = new trSexoDTO();
+        trEstadoCivilDTO s = new trEstadoCivilDTO();
         String query = "SELECT trIdCatalogo"
                     + ", trIdCatalogoTipo"
                     + ", trNombre"
@@ -125,7 +125,7 @@ public class trSexoDAO extends trSQLiteDataHelper implements trIDAO<trSexoDTO> {
                     + ", trFechaModifica"
                     + " FROM trCatalogo"
                     + " WHERE trEstado = 'A'"
-                    + " AND trIdCatalogoTipo = 2" // Tipo 2 para Sexo Masculino
+                    + " AND trIdCatalogoTipo = 3" // Tipo 3 para Estado Civil
                     + " AND trIdCatalogo = " + id.toString();
   
         try {
@@ -134,13 +134,13 @@ public class trSexoDAO extends trSQLiteDataHelper implements trIDAO<trSexoDTO> {
             ResultSet rs = stmt.executeQuery(query);
 
             while (rs.next()) {
-                s = new trSexoDTO( rs.getInt(1),       // trIdCatalogo
-                                   rs.getInt(2),       // trIdCatalogoTipo
-                                   rs.getString(3),    // trNombre
-                                   rs.getString(4),    // trDescripcion
-                                   rs.getString(5),    // trEstado                                     rs.getString(6),    // trFechaCreacion
-                                   rs.getString(6),    // trFechaCreacion
-                                   rs.getString(7));   // trFechaModifica
+                s = new trEstadoCivilDTO( rs.getInt(1),       // trIdCatalogo
+                                          rs.getInt(2),       // trIdCatalogoTipo
+                                          rs.getString(3),    // trNombre
+                                          rs.getString(4),    // trDescripcion
+                                          rs.getString(5),    // trEstado
+                                          rs.getString(6),    // trFechaCreacion
+                                          rs.getString(7));   // trFechaModifica
                 
             }
 
@@ -155,7 +155,7 @@ public class trSexoDAO extends trSQLiteDataHelper implements trIDAO<trSexoDTO> {
 
         String query = "SELECT COUNT(*) TotalReg "
                      + "FROM trCatalogo "
-                     + " AND trIdCatalogoTipo = 2" 
+                     + " AND trIdCatalogoTipo = 3" 
                      + " WHERE trEstado = 'A';";
 
         try {
@@ -173,6 +173,5 @@ public class trSexoDAO extends trSQLiteDataHelper implements trIDAO<trSexoDTO> {
         return 0;
     }
 
-   
 
 }
