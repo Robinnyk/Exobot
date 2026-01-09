@@ -1,6 +1,6 @@
 package trDataAcces.trDTO;
 
-public class trSexoDTO {
+public class trPersonaTipoDTO {
 
     private Integer trIdCatalogo;
     private Integer trIdCatalogoTipo;
@@ -10,9 +10,9 @@ public class trSexoDTO {
     private String  trFechaCreacion;
     private String  trFechaModificacion;
 
-    public trSexoDTO() {}
-   
-    public trSexoDTO(Integer trIdCatalogo, Integer trIdCatalogoTipo, String trNombre, String trDescripcion,
+    public trPersonaTipoDTO() {}
+
+    public trPersonaTipoDTO(Integer trIdCatalogo, Integer trIdCatalogoTipo, String trNombre, String trDescripcion,
             String trEstado, String trFechaCreacion, String trFechaModificacion) {
         this.trIdCatalogo = trIdCatalogo;
         this.trIdCatalogoTipo = trIdCatalogoTipo;
@@ -23,60 +23,47 @@ public class trSexoDTO {
         this.trFechaModificacion = trFechaModificacion;
     }
 
-    public Integer getTrIdCatalogoTipo() {
-        return trIdCatalogoTipo;
-    }
-
-    public void setTrIdCatalogoTipo(Integer trIdCatalogoTipo) {
-        this.trIdCatalogoTipo = trIdCatalogoTipo;
-    }
-
-    public String getTrEstado() {
-        return trEstado;
-    }
-
-    public void setTrEstado(String trEstado) {
-        this.trEstado = trEstado;
-    }
-
-    public String getTrFechaCreacion() {
-        return trFechaCreacion;
-    }
-
-    public void setTrFechaCreacion(String trFechaCreacion) {
-        this.trFechaCreacion = trFechaCreacion;
-    }
-
-    public String getTrFechaModificacion() {
-        return trFechaModificacion;
-    }
-
-    public void setTrFechaModificacion(String trFechaModificacion) {
-        this.trFechaModificacion = trFechaModificacion;
-    }
-
     public Integer getTrIdCatalogo() {
         return trIdCatalogo;
     }
-
     public void setTrIdCatalogo(Integer trIdCatalogo) {
         this.trIdCatalogo = trIdCatalogo;
     }
-
+    public Integer getTrIdCatalogoTipo() {
+        return trIdCatalogoTipo;
+    }
+    public void setTrIdCatalogoTipo(Integer trIdCatalogoTipo) {
+        this.trIdCatalogoTipo = trIdCatalogoTipo;
+    }
     public String getTrNombre() {
         return trNombre;
     }
-
     public void setTrNombre(String trNombre) {
         this.trNombre = trNombre;
     }
-
     public String getTrDescripcion() {
         return trDescripcion;
     }
-
     public void setTrDescripcion(String trDescripcion) {
         this.trDescripcion = trDescripcion;
+    }
+    public String getTrEstado() {
+        return trEstado;
+    }
+    public void setTrEstado(String trEstado) {
+        this.trEstado = trEstado;
+    }
+    public String getTrFechaCreacion() {
+        return trFechaCreacion;
+    }
+    public void setTrFechaCreacion(String trFechaCreacion) {
+        this.trFechaCreacion = trFechaCreacion;
+    }
+    public String getTrFechaModificacion() {
+        return trFechaModificacion;
+    }
+    public void setTrFechaModificacion(String trFechaModificacion) {
+        this.trFechaModificacion = trFechaModificacion;
     }
 
     @Override
@@ -88,8 +75,7 @@ public class trSexoDTO {
                 "\n Descripcion:            " + getTrDescripcion() +
                 "\n Estado:                 " + getTrEstado() +
                 "\n FechaCreacion:          " + getTrFechaCreacion() +
-                "\n FechaModificacion:      " + getTrFechaModificacion();
+                "\n FechaModificacion:'" + getTrFechaModificacion();
     }
-
     
 }

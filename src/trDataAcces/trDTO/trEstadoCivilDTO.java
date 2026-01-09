@@ -81,13 +81,13 @@ public class trEstadoCivilDTO {
 
     @Override
     public String toString() {
-        return getClass().getName() + 
-                "\n IdCatalogo:" + getTrIdCatalogo() +
-                "\n IdCatalogoTipo:" + getTrIdCatalogoTipo() +
-                "\n Nombre:'" + getTrNombre() +
-                "\n Descripcion:'" + getTrDescripcion() +
-                "\n Estado:'" + getTrEstado() +
-                "\n FechaCreacion:'" + getTrFechaCreacion() +
+        return  "\n" + getClass().getName() + 
+                "\n IdCatalogo:             " + getTrIdCatalogo() +
+                "\n IdCatalogoTipo:         " + getTrIdCatalogoTipo() +
+                "\n Nombre:                 " + getTrNombre() +
+                "\n Descripcion:            " + getTrDescripcion() +
+                "\n Estado:                 " + getTrEstado() +
+                "\n FechaCreacion:          " + getTrFechaCreacion() +
                 "\n FechaModificacion:'" + getTrFechaModificacion();
     }
 
