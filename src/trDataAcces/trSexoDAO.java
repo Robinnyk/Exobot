@@ -10,8 +10,8 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
-import trDataAcces.trDTO.trSexoAnteDTO;
 import trDataAcces.trDTO.trSexoDTO;
+import trFramework.trRBException;
 
 public class trSexoDAO extends trSQLiteDataHelper implements trIDAO<trSexoDTO> {
 
@@ -30,7 +30,7 @@ public class trSexoDAO extends trSQLiteDataHelper implements trIDAO<trSexoDTO> {
             return true;
 
         } catch (SQLException e) {
-            throw e;
+            throw new trRBException(e.getMessage(), getClass().getName(), "create()");
         }
     }
 
@@ -67,7 +67,7 @@ public class trSexoDAO extends trSQLiteDataHelper implements trIDAO<trSexoDTO> {
             }
 
         } catch (SQLException e) {
-            throw e;
+            throw new trRBException(e.getMessage(), getClass().getName(), "readAll()");
         }
 
         return listaSexos;
@@ -91,7 +91,7 @@ public class trSexoDAO extends trSQLiteDataHelper implements trIDAO<trSexoDTO> {
             return true;
 
         } catch (SQLException e) {
-            throw e;
+            throw new trRBException(e.getMessage(), getClass().getName(), "update()");
         }
     }
 
@@ -109,7 +109,7 @@ public class trSexoDAO extends trSQLiteDataHelper implements trIDAO<trSexoDTO> {
             return true;
 
         } catch (SQLException e) {
-            throw e;
+            throw new trRBException(e.getMessage(), getClass().getName(), "delete()");
         }
     }
 
@@ -146,7 +146,7 @@ public class trSexoDAO extends trSQLiteDataHelper implements trIDAO<trSexoDTO> {
             }
 
         } catch (SQLException e) {
-            throw e;
+            throw new trRBException(e.getMessage(), getClass().getName(), "readBy()");
         }
 
         return s;
@@ -168,7 +168,7 @@ public class trSexoDAO extends trSQLiteDataHelper implements trIDAO<trSexoDTO> {
             }
             
         } catch (SQLException e) {
-            throw e;
+            throw new trRBException(e.getMessage(), getClass().getName(), "getRowCout()");
 
         }
         return 0;

@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import trDataAcces.trDTO.trPersonaTipoDTO;
-import trDataAcces.trDTO.trSexoDTO;
+import trFramework.trRBException;
 
 public class trPersonaTipoDAO extends trSQLiteDataHelper implements trIDAO<trPersonaTipoDTO> {
 
@@ -31,7 +31,7 @@ public class trPersonaTipoDAO extends trSQLiteDataHelper implements trIDAO<trPer
             return true;
 
         } catch (SQLException e) {
-            throw e;
+            throw new trRBException(e.getMessage(), getClass().getName(), "create()");
         }
     }
 
@@ -68,7 +68,7 @@ public class trPersonaTipoDAO extends trSQLiteDataHelper implements trIDAO<trPer
             }
 
         } catch (SQLException e) {
-            throw e;
+            throw new trRBException(e.getMessage(), getClass().getName(), "readAll()");
         }
 
         return listaPersonas;
@@ -91,7 +91,7 @@ public class trPersonaTipoDAO extends trSQLiteDataHelper implements trIDAO<trPer
             return true;
 
         } catch (SQLException e) {
-            throw e;
+            throw new trRBException(e.getMessage(), getClass().getName(), "update()");
         }
     }
 
@@ -109,7 +109,7 @@ public class trPersonaTipoDAO extends trSQLiteDataHelper implements trIDAO<trPer
             return true;
 
         } catch (SQLException e) {
-            throw e;
+            throw new trRBException(e.getMessage(), getClass().getName(), "delete()");
         }
     }
 
@@ -146,7 +146,7 @@ public class trPersonaTipoDAO extends trSQLiteDataHelper implements trIDAO<trPer
             }
 
         } catch (SQLException e) {
-            throw e;
+            throw new trRBException(e.getMessage(), getClass().getName(), "readBy()");
         }
 
         return s;
@@ -168,7 +168,7 @@ public class trPersonaTipoDAO extends trSQLiteDataHelper implements trIDAO<trPer
             }
             
         } catch (SQLException e) {
-            throw e;
+            throw new trRBException(e.getMessage(), getClass().getName(), "getRowCout()");
 
         }
         return 0;

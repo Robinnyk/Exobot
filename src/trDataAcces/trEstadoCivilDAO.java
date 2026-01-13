@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import trDataAcces.trDTO.trEstadoCivilDTO;
+import trFramework.trRBException;
 
 public class trEstadoCivilDAO extends trSQLiteDataHelper implements trIDAO<trEstadoCivilDTO> {
 
@@ -29,7 +30,7 @@ public class trEstadoCivilDAO extends trSQLiteDataHelper implements trIDAO<trEst
             return true;
 
         } catch (SQLException e) {
-            throw e;
+            throw new trRBException(e.getMessage(), getClass().getName(), "create()");
         }
     }
 
@@ -66,7 +67,7 @@ public class trEstadoCivilDAO extends trSQLiteDataHelper implements trIDAO<trEst
             }
 
         } catch (SQLException e) {
-            throw e;
+            throw new trRBException(e.getMessage(), getClass().getName(), "readAll()");
         }
 
         return listaEstadoCivil;
@@ -90,7 +91,7 @@ public class trEstadoCivilDAO extends trSQLiteDataHelper implements trIDAO<trEst
             return true;
 
         } catch (SQLException e) {
-            throw e;
+            throw new trRBException(e.getMessage(), getClass().getName(), "update()");
         }
     }
 
@@ -108,7 +109,7 @@ public class trEstadoCivilDAO extends trSQLiteDataHelper implements trIDAO<trEst
             return true;
 
         } catch (SQLException e) {
-            throw e;
+            throw new trRBException(e.getMessage(), getClass().getName(), "delete()");
         }
     }
 
@@ -145,7 +146,7 @@ public class trEstadoCivilDAO extends trSQLiteDataHelper implements trIDAO<trEst
             }
 
         } catch (SQLException e) {
-            throw e;
+            throw new trRBException(e.getMessage(), getClass().getName(), "readBy()");
         }
 
         return s;
@@ -167,7 +168,7 @@ public class trEstadoCivilDAO extends trSQLiteDataHelper implements trIDAO<trEst
             }
             
         } catch (SQLException e) {
-            throw e;
+            throw new trRBException(e.getMessage(), getClass().getName(), "getRowCout()");
 
         }
         return 0;

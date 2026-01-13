@@ -1,16 +1,8 @@
 package trBusinessLogic.trEntities;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
 import java.util.List;
 
 import trDataAcces.trSexoDAO;
-import trDataAcces.trDTO.trSexoAnteDTO;
 import trDataAcces.trDTO.trSexoDTO;
 
 public class trSexoBL {
@@ -21,7 +13,14 @@ public class trSexoBL {
     public trSexoBL() {}
 
     public List<trSexoDTO> getAllSexos() throws Exception {
-        return sDAO.readAll();
+
+        // Regla de negocio: Convertir el nombre del sexo a mayúsculas
+        
+        List<trSexoDTO> lst = sDAO.readAll();
+        for (trSexoDTO sDto : lst) {
+            sDto.setTrNombre(sDto.getTrNombre().toUpperCase());
+        }
+        return lst;
     }
 
     public trSexoDTO getSexoById(Integer id) throws Exception {
