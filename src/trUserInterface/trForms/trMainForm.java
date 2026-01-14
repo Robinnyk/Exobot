@@ -5,23 +5,22 @@ import java.awt.BorderLayout;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.border.Border;
 
 import trUserInterface.IAStyle;
 
 public class trMainForm extends JFrame{
 
     trMenuPanel menuPanel = new trMenuPanel();
-    JPanel mainPanel = new trMainPanel();
+    JPanel mainPanel = new JPanel();
 
     public trMainForm(String tittleApp) {
        customizeComponent(tittleApp);
-       menuPanel.btnHome.addActionListener(e -> setPanel(new trMainPanel()));
-       menuPanel.btnLogin.addActionListener(e -> setPanel(new LoginPanel()));
-       menuPanel.btnSexo.addActionListener(e -> setPanel(new SexoPanel()));
-       menuPanel.btnLocalidad.addActionListener(e -> setPanel(new trMainPanel()));
+       menuPanel.btnHome.addActionListener(e -> setPanel(new JPanel()));
+       menuPanel.btnLogin.addActionListener(e -> setPanel(new JPanel()));
+       menuPanel.btnSexo.addActionListener(e -> setPanel(new JPanel()));
+       menuPanel.btnLocalidad.addActionListener(e -> setPanel(new JPanel()));
        // Agregar
-       menuPanel.btnTest.addActionListener(e -> {IAStyle.showMsgError("Mensaje de Error");});
+       menuPanel.btnTest.addActionListener(e -> {IAStyle.showMsg("Mensaje de Error");});
     }
 
     private void setPanel (JPanel formularioPanel) {

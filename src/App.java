@@ -9,6 +9,7 @@ import trDataAccess.trSexoDAO;
 import trDataAccess.trDTO.trEstadoCivilDTO;
 import trDataAccess.trDTO.trPersonaTipoDTO;
 import trDataAccess.trDTO.trSexoDTO;
+import trUserInterface.trForms.trMainForm;
 import trUserInterface.trForms.trSplashScreenForm;
 
 public class App {
@@ -106,7 +107,7 @@ public class App {
             System.err.println("------------------------------------------------------------");
 
             trSplashScreenForm.show();
-            // MainForm frMain = new MainForm("IABot - ExoBot");
+            trMainForm frMain = new trMainForm("IABot - ExoBot");
             
 
         }catch (Exception e) {
