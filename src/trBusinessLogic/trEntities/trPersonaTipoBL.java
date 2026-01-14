@@ -2,8 +2,8 @@ package trBusinessLogic.trEntities;
 
 import java.util.List;
 
-import trDataAcces.trPersonaTipoDAO;
-import trDataAcces.trDTO.trPersonaTipoDTO;
+import trDataAccess.trPersonaTipoDAO;
+import trDataAccess.trDTO.trPersonaTipoDTO;
 
 public class trPersonaTipoBL {
 

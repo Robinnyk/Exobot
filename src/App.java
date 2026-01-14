@@ -1,12 +1,15 @@
+import java.awt.SplashScreen;
+
 import trBusinessLogic.trEntities.trEstadoCivilBL;
 import trBusinessLogic.trEntities.trPersonaTipoBL;
 import trBusinessLogic.trEntities.trSexoBL;
-import trDataAcces.trEstadoCivilDAO;
-import trDataAcces.trPersonaTipoDAO;
-import trDataAcces.trSexoDAO;
-import trDataAcces.trDTO.trEstadoCivilDTO;
-import trDataAcces.trDTO.trPersonaTipoDTO;
-import trDataAcces.trDTO.trSexoDTO;
+import trDataAccess.trEstadoCivilDAO;
+import trDataAccess.trPersonaTipoDAO;
+import trDataAccess.trSexoDAO;
+import trDataAccess.trDTO.trEstadoCivilDTO;
+import trDataAccess.trDTO.trPersonaTipoDTO;
+import trDataAccess.trDTO.trSexoDTO;
+import trUserInterface.trForms.trSplashScreenForm;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -99,6 +102,11 @@ public class App {
             for (trPersonaTipoDTO pT: personaTipoBL.getAllPersonaTipo()) {
                 System.out.println(pT.toString());
             }
+
+            System.err.println("------------------------------------------------------------");
+
+            trSplashScreenForm.show();
+            // MainForm frMain = new MainForm("IABot - ExoBot");
             
 
         }catch (Exception e) {

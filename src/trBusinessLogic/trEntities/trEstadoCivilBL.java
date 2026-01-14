@@ -2,8 +2,8 @@ package trBusinessLogic.trEntities;
 
 import java.util.List;
 
-import trDataAcces.trEstadoCivilDAO;
-import trDataAcces.trDTO.trEstadoCivilDTO;
+import trDataAccess.trEstadoCivilDAO;
+import trDataAccess.trDTO.trEstadoCivilDTO;
 
 public class trEstadoCivilBL {
 

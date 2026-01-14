@@ -2,8 +2,8 @@ package trBusinessLogic.trEntities;
 
 import java.util.List;
 
-import trDataAcces.trSexoDAO;
-import trDataAcces.trDTO.trSexoDTO;
+import trDataAccess.trSexoDAO;
+import trDataAccess.trDTO.trSexoDTO;
 
 public class trSexoBL {
 
