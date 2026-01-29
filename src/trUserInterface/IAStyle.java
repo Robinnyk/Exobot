@@ -31,7 +31,7 @@ public abstract class IAStyle {
 
     public static final URL URL_MAIN = IAStyle.class.getResource("/trUserInterface/trResources/Images/IABOT.png");
     public static final URL URL_LOGO = IAStyle.class.getResource("/trUserInterface/trResources/Images/Logo.png");
-    public static final URL URL_SPLASH = IAStyle.class.getResource("/trUserInterface/trResources/Images/Splash.jpg");
+    public static final URL URL_SPLASH = IAStyle.class.getResource("/trUserInterface/trResources/Images/Splash.png");
 
     public static final CompoundBorder createBorderRect(int thickness) {
         return BorderFactory.createCompoundBorder(new LineBorder(Color.lightGray), new EmptyBorder(5,5,5,5));

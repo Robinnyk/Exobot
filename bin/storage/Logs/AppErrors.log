@@ -1,0 +1,36 @@
+???? SHOW ?? Ups! Error inesperado. Por favor, contacte al administrador del sistema. 
+????? LOG  ?? 2026-01-28 21:22:09 | trExoBotDAO.readAll | [SQLITE_ERROR] SQL error or missing database (no such table: trExoBot)
+???? SHOW ?? Ups! Error inesperado. Por favor, contacte al administrador del sistema. 
+????? LOG  ?? 2026-01-28 21:22:41 | trExoBotDAO.readAll | [SQLITE_ERROR] SQL error or missing database (no such table: trExoBot)
+???? SHOW ?? Ups! Error inesperado. Por favor, contacte al administrador del sistema. 
+????? LOG  ?? 2026-01-28 21:22:43 | trSexoDAO.getMinReg(...) | [SQLITE_ERROR] SQL error or missing database (no such table: trSexo)
+???? SHOW ?? Ups! Error inesperado. Por favor, contacte al administrador del sistema. 
+????? LOG  ?? 2026-01-28 21:24:39 | trExoBotDAO.readAll | [SQLITE_ERROR] SQL error or missing database (no such table: trExoBot)
+???? SHOW ?? Ups! Error inesperado. Por favor, contacte al administrador del sistema. 
+????? LOG  ?? 2026-01-28 21:24:45 | trExoBotDAO.readAll | [SQLITE_ERROR] SQL error or missing database (no such table: trExoBot)
+???? SHOW ?? Ups! Error inesperado. Por favor, contacte al administrador del sistema. 
+????? LOG  ?? 2026-01-28 21:30:40 | trExoBotDAO.readAll | [SQLITE_ERROR] SQL error or missing database (no such table: trExoBot)
+???? SHOW ?? Ups! Error inesperado. Por favor, contacte al administrador del sistema. 
+????? LOG  ?? 2026-01-28 21:42:49 | trExoBotDAO.readAll | [SQLITE_ERROR] SQL error or missing database (no such table: trExoBot)
+???? SHOW ?? Ups! Error inesperado. Por favor, contacte al administrador del sistema. 
+????? LOG  ?? 2026-01-28 21:45:48 | trExoBotDAO.readAll | [SQLITE_ERROR] SQL error or missing database (no such table: trExoBot)
+???? SHOW ?? Ups! Error inesperado. Por favor, contacte al administrador del sistema. 
+????? LOG  ?? 2026-01-28 22:58:50 | trExoBotDAO.readAll | [SQLITE_ERROR] SQL error or missing database (no such table: trExoBot)
+???? SHOW ?? Ups! Error inesperado. Por favor, contacte al administrador del sistema. 
+????? LOG  ?? 2026-01-28 23:00:56 | trExoBotDAO.readAll | [SQLITE_ERROR] SQL error or missing database (no such table: trExoBot)
+???? SHOW ?? Ups! Error inesperado. Por favor, contacte al administrador del sistema. 
+????? LOG  ?? 2026-01-28 23:09:40 | trExoBotDAO.readAll | [SQLITE_ERROR] SQL error or missing database (no such table: trExoBot)
+???? SHOW ?? Ups! Error inesperado. Por favor, contacte al administrador del sistema. 
+????? LOG  ?? 2026-01-28 23:10:20 | trExoBotDAO.readAll | [SQLITE_ERROR] SQL error or missing database (no such table: trExoBot)
+???? SHOW ?? Ups! Error inesperado. Por favor, contacte al administrador del sistema. 
+????? LOG  ?? 2026-01-28 23:14:31 | trExoBotDAO.mapResultSetToEntity | trIdArma
+???? SHOW ?? Ups! Error inesperado. Por favor, contacte al administrador del sistema. 
+????? LOG  ?? 2026-01-28 23:14:39 | trExoBotDAO.mapResultSetToEntity | trIdArma
+???? SHOW ?? Ups! Error inesperado. Por favor, contacte al administrador del sistema. 
+????? LOG  ?? 2026-01-28 23:18:19 | trExoBotDAO.mapResultSetToEntity | trIdArma
+???? SHOW ?? Ups! Error inesperado. Por favor, contacte al administrador del sistema. 
+????? LOG  ?? 2026-01-28 23:18:25 | trExoBotDAO.mapResultSetToEntity | trIdArma
+???? SHOW ?? Ups! Error inesperado. Por favor, contacte al administrador del sistema. 
+????? LOG  ?? 2026-01-28 23:21:08 | trExoBotDAO.mapResultSetToEntity | trIdArma
+???? SHOW ?? Ups! Error inesperado. Por favor, contacte al administrador del sistema. 
+????? LOG  ?? 2026-01-28 23:21:12 | trExoBotDAO.mapResultSetToEntity | trIdArma

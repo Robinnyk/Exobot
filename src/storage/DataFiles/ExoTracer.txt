@@ -1,0 +1,15 @@
+2026-01-28 21:10:44 | GOOD : Acceso concedido
+2026-01-28 21:20:02 | GOOD : Acceso concedido
+2026-01-28 21:20:39 | GOOD : Acceso concedido
+2026-01-28 21:22:02 | GOOD : Acceso concedido
+2026-01-28 21:24:32 | GOOD : Acceso concedido
+2026-01-28 21:30:33 | GOOD : Acceso concedido
+2026-01-28 21:42:42 | GOOD : Acceso concedido
+2026-01-28 21:45:40 | GOOD : Acceso concedido
+2026-01-28 22:58:42 | GOOD : Acceso concedido
+2026-01-28 23:00:49 | GOOD : Acceso concedido
+2026-01-28 23:09:32 | GOOD : Acceso concedido
+2026-01-28 23:10:12 | GOOD : Acceso concedido
+2026-01-28 23:14:10 | GOOD : Acceso concedido
+2026-01-28 23:18:11 | GOOD : Acceso concedido
+2026-01-28 23:21:01 | GOOD : Acceso concedido
